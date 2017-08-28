@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:id="@+id/rlItem"
+    android:paddingTop="10dp"
+    android:layout_height="100dp">
+
+    <ImageView
+        android:id="@+id/ivItem"
+        android:paddingBottom="10dp"
+        android:layout_width="80dp"
+        android:layout_height="80dp" />
+
+    <RatingBar
+        android:id="@+id/tvItemRating"
+        android:layout_toRightOf="@+id/ivItem"
+        style="?android:attr/ratingBarStyleIndicator"
+        android:scaleX=".5"
+        android:rating="3.5"
+        android:scaleY=".5"
+        android:transformPivotX="0dp"
+        android:transformPivotY="0dp"
+        android:max="5"
+        android:paddingLeft="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="30dp" />
+
+    <TextView
+        android:id="@+id/tvItemName"
+        android:layout_toRightOf="@+id/ivItem"
+        android:layout_below="@+id/tvItemRating"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:textSize="15sp"
+        android:paddingLeft="10dp"
+        android:gravity="top|left"
+        android:text="lora Zapem"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_below="@id/ivItem"
+        android:layout_height="1dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:background="@android:color/darker_gray"/>
+
+</RelativeLayout>
